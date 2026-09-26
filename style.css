@@ -1,0 +1,221 @@
+header{
+    background-color: #1f2937;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    
+}
+
+nav{
+    background-color: #1f2937;
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    justify-content: center;
+    
+
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.3s ease-in;
+}
+
+#home{
+    padding: 60px 20px;
+    text-align: center;
+    background-color: darkcyan;
+   
+}
+
+#home h1{
+    font-size: 40px;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+#home a{
+   
+   padding: 10px 20px;
+   border-radius: 5px;
+   border: 2px solid white;
+   cursor: pointer;
+   text-decoration: none;
+   transition: 0.3s;
+
+
+}
+
+#home a:hover{
+    background-color: black;
+   color: white;
+
+}
+
+#About{
+    background-color: #111827;
+    color: white;
+    padding: 20px;
+    
+   
+}
+
+#About ul{
+     list-style: none;
+     display: flex;
+     gap: 20px;
+    justify-content: center;
+     padding: 0;
+}
+
+#About h2{
+    text-align: center;
+}
+
+#Projects{
+    width:300px;
+    background-color: #f3f4f6;
+    padding: 10px;
+    color: black;  
+    margin: 30px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #1f2937;
+    font-size: 20px;
+
+
+}
+
+#Projects h2{
+    text-align: center;
+    font-size: 40px;
+
+}
+
+#Projects ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#Contact{
+    background-color: #e0f2fe;
+    padding:20px;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
+#Contact h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+#Contact h3{
+    text-align: center;
+    font-size: 20px;
+}
+
+#Contact input{
+    width:200px;
+    padding: 5px;
+    margin-bottom: 5px;
+
+}
+
+#Contact textarea{
+    height: 70px;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+#Contact button{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 3px solid white;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    transition: 1s;
+    
+}
+
+#Contact button:hover{
+    background-color: green;
+    color: black;
+    
+}
+
+footer{
+    background-color:aliceblue;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+
+
+    
+}
+
+nav a:hover{
+    border: 2px solid white;
+    border-radius: 3px;
+   
+    
+    
+}
+
+.project-card{
+    background-color: burlywood;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 7px;
+    box-shadow: 0 4px 10px black;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.project-card a{
+   background-color: black;
+   color: white;
+   padding:5px;
+   border-radius: 5px;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+.project-card a:hover{
+    background-color: cornflowerblue;
+    color: black;
+}
+
+@media(max-width:600px){
+    #Contact{
+        width:90%;
+    }
+
+    #Projects{
+        width: 90%;
+    }
+
+     nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home h1{
+        font-size: 30px;
+    }
+
+}
+
