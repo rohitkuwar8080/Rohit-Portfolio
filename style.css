@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     background-color: #1f2937;
     text-align: center;
@@ -19,23 +23,32 @@ nav{
 nav a{
     color: white;
     text-decoration: none;
-    padding: 5px;
+    padding: 8px 12px;
     transition: 0.3s ease-in;
+}
+
+nav a:hover{
+    background-color: #374151;
+    border-radius: 5px;
 }
 
 #home{
     padding: 60px 20px;
     text-align: center;
-    background-color: darkcyan;
+   background-color: #0f172a;
+
    
 }
 
 #home h1{
     font-size: 40px;
+    letter-spacing: 1px;
+    color: white;
 }
 
 #home p {
     font-size: 20px;
+    color: white;
 }
 
 #home a{
@@ -46,20 +59,33 @@ nav a{
    cursor: pointer;
    text-decoration: none;
    transition: 0.3s;
+   display: inline-block;
+   margin: 5px;
+   color: rgb(255, 255, 255);
 
 
 }
 
+#home a:first-of-type{
+    background-color: white;
+    color: #0f172a;
+}
+
+#home a:first-of-type:hover{
+    background-color: #2563eb;
+    color: white;
+}
+
 #home a:hover{
-    background-color: black;
-   color: white;
+    background-color: rgb(255, 251, 251);
+   color: rgb(2, 2, 2);
 
 }
 
 #About{
     background-color: #111827;
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
     
    
 }
@@ -70,10 +96,37 @@ nav a{
      gap: 20px;
     justify-content: center;
      padding: 0;
+     font-size: 20px;
+     flex-wrap: wrap;
+}
+
+#About li{
+    background-color: #1f2937;
+    padding: 12px 20px;
+     border: 2px solid white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#About li:hover{
+    transform: translateY(-5px);
 }
 
 #About h2{
     text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#About p{
+    text-align: center;
+    font-size: 18px;
+    max-width:700px;
+    margin:20px auto;
+    line-height: 1.6;
+
+
 }
 
 #Projects{
@@ -105,15 +158,25 @@ nav a{
 #Contact{
     background-color: #e0f2fe;
     padding:20px;
-    width: 500px;
+    width: 90%;
+    max-width: 500px;
     margin: auto;
     margin-bottom: 10px;
+    box-sizing: border-box;
+    text-align: center;
 
+}
+
+#Contact label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 #Contact h2{
     text-align: center;
     font-size: 40px;
+    margin-bottom: 10px;
 }
 
 #Contact h3{
@@ -122,49 +185,60 @@ nav a{
 }
 
 #Contact input{
-    width:200px;
-    padding: 5px;
-    margin-bottom: 5px;
+    width:90%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border:2px solid #1f2937;
+    border-radius: 5px;
+    box-sizing: border-box;
 
 }
 
 #Contact textarea{
-    height: 70px;
-    width: 200px;
+    height: 120px;
+    width: 90%px;
+    max-width: 400px;
     margin-bottom: 5px;
+    padding: 10px;
+    border: 2px solid #1f2937;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
 }
 
 #Contact button{
-    background-color: black;
+    background-color: #1f2937;;
     color: white;
-    padding: 5px;
-    border-radius: 5px;
-    border: 3px solid white;
+    padding: 10px 25px;
+    border-radius: 6px;
+    border: 2px solid  #1f2937;;
     cursor: pointer;
-    width: 100px;
-    height: 35px;
-    font-size: 15px;
-    transition: 1s;
+    font-size: 16px;
+    transition: 0.3s;
     
 }
 
 #Contact button:hover{
-    background-color: green;
-    color: black;
+    background-color: white;
+    color: #1f2937;
+    transform:translateY(-2px)
     
 }
 
 footer{
-    background-color:aliceblue;
-    color: black;
+   
+    background-color: #111827;
+    color: white;
     text-align: center;
-    padding: 5px;
+    padding: 15px;
     font-size: 20px;
-    margin-top: 5px;
+    margin-top: 20px;
+}
 
 
     
-}
+
 
 nav a:hover{
     border: 2px solid white;
@@ -182,7 +256,13 @@ nav a:hover{
     box-shadow: 0 4px 10px black;
     margin-bottom: 10px;
     text-align: center;
+    transition: 0.3s;
 
+}
+
+.project-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px black;
 }
 
 .project-card a{
@@ -197,6 +277,7 @@ nav a:hover{
 .project-card a:hover{
     background-color: cornflowerblue;
     color: black;
+   
 }
 
 @media(max-width:600px){
